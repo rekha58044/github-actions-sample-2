@@ -1,8 +1,11 @@
 name: workflow-meta
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      - dev
 jobs:
   meta:
     runs-on: ubuntu-latest
     steps:
-      - name: output github context
+      - name: output github contexts
         run: echo "${{ toJson(github)}}"
