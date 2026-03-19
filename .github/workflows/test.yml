@@ -20,3 +20,8 @@ jobs:
       - name: run tests
         run: npm test
         working-directory: ./02 Starting Project
+  message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: message
+        run: echo "tests completed"
