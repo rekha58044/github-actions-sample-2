@@ -25,6 +25,10 @@ jobs:
     steps:
       - name: checkout code
         uses: actions/checkout@v4
+      - name: setup node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 18
       - name: install dependencies
         run: npm install
         working-directory: ./02 Starting Project
